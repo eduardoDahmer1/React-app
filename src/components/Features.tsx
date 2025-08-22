@@ -13,7 +13,7 @@ const Features = () => {
     <section id="features" className="features-section bg-light py-5">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="fw-bold display-6">Key Features</h2>
+          <h2 className="fw-bold display-6 text-dark">Key Features</h2>
         </div>
 
         <Row className="g-4">
