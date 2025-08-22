@@ -1,36 +1,35 @@
-import React from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+import { FaRocket, FaPalette, FaMobileAlt } from "react-icons/fa";
+import "../components/css/Features.css";
 
 const features = [
-  { title: "Easy Setup", icon: "⚡" },
-  { title: "Customizable", icon: "🎨" },
-  { title: "SEO Friendly", icon: "🔍" },
+  { icon: <FaRocket size={28} className="text-warning" />, title: "Performance", desc: "Lightning-fast rendering with React and optimized code." },
+  { icon: <FaPalette size={28} className="text-info" />, title: "Customizable UI", desc: "Easily adaptable designs with reusable components." },
+  { icon: <FaMobileAlt size={28} className="text-success" />, title: "Mobile First", desc: "Responsive layouts that look great on any device." },
 ];
 
 const Features = () => {
   return (
-    <section id="features" className="py-20 px-6 md:px-20 bg-gray-800">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">
-          Features
-        </h2>
-        <div className="flex flex-col md:flex-row justify-center gap-8">
-          {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="bg-gray-900 p-6 rounded-xl shadow-lg text-center transition-transform transform hover:-translate-y-2 hover:shadow-2xl flex-1"
-            >
-              <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl md:text-2xl font-semibold mb-4 text-blue-400">
-                {feature.title}
-              </h3>
-              <p className="text-gray-300 text-sm md:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Vivamus lacinia odio vitae vestibulum vestibulum.
-              </p>
-            </div>
-          ))}
+    <section id="features" className="features-section bg-light py-5">
+      <Container>
+        <div className="text-center mb-5">
+          <h2 className="fw-bold display-6">Key Features</h2>
         </div>
-      </div>
+
+        <Row className="g-4">
+          {features.map((feature) => (
+            <Col key={feature.title} md={4}>
+              <Card className="h-100 text-center border-0 shadow feature-card">
+                <Card.Body>
+                  <div className="mb-3">{feature.icon}</div>
+                  <Card.Title className="fw-semibold">{feature.title}</Card.Title>
+                  <Card.Text className="text-muted">{feature.desc}</Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </section>
   );
 };

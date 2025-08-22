@@ -1,0 +1,14 @@
+.services-section {
+    min-height: 80vh;
+  }
+  
+  .service-card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.4);
+  }
+  

@@ -1,33 +1,33 @@
-import React from "react";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import "../components/css/About.css";
 
 const About = () => {
   return (
-<section id="about" className="py-20 px-6 md:px-20 bg-gray-800 text-gray-300">
-  <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8">
-    <img
-      src="/fotos/lucasFoto.jpg"
-      alt="Lucas Maronez"
-      className="rounded-lg shadow-lg w-full md:w-1/2"
-    />
-    <div>
-      <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-6 text-white">
-        Quem é Lucas Maronez?
-      </h2>
-      <p className="mb-4 text-gray-300">
-        Sócio-fundador da Maronez Advogados, especialista em isenção de Imposto
-        de Renda para aposentados, pensionistas e militares. Atua com ética e
-        atendimento humanizado.
-      </p>
-      <a
-        href="https://wa.me/554599822480?text=Quero falar com o Lucas"
-        className="bg-green-600 hover:bg-green-500 text-white py-3 px-6 rounded transition"
-      >
-        FALAR COM UM ESPECIALISTA
-      </a>
-    </div>
-  </div>
-</section>
-
+    <section id="about" className="about-section py-5 bg-dark text-light">
+      <Container>
+        <Row className="align-items-center">
+          <Col md={6} className="mb-4 mb-md-0">
+            <Image
+              src="/assets/about-image.png"
+              alt="About Us"
+              fluid
+              rounded
+              className="shadow about-img"
+            />
+          </Col>
+          <Col md={6}>
+            <h2 className="fw-bold display-6 mb-3">About Us</h2>
+            <p className="lead text-muted">
+              We are passionate developers creating modern, fast, and scalable React applications.
+            </p>
+            <p className="text-muted">
+              Our mission is to help businesses and individuals build stunning user experiences
+              with cutting-edge web technologies.
+            </p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
   );
 };
 

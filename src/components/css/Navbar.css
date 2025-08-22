@@ -1,0 +1,39 @@
+/* Gradiente no título */
+.navbar-title {
+    font-size: 1.75rem; /* ~text-2xl */
+    font-weight: bold;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6, #6366f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Links do menu */
+  .navbar-links li {
+    position: relative;
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease;
+    padding: 0.25rem 0; /* dá mais espaço clicável */
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+  }
+  
+  /* Linha animada embaixo do link */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: linear-gradient(90deg, #22d3ee, #3b82f6);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  

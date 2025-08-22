@@ -1,0 +1,18 @@
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-card {
+  border-radius: 14px;
+  background: #ffffff;
+}
+
+.contact-btn {
+  transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-2px);
+}

@@ -1,0 +1,14 @@
+.features-section {
+    min-height: 70vh;
+  }
+  
+  .feature-card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  }
+  

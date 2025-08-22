@@ -1,0 +1,12 @@
+.about-section {
+    min-height: 80vh;
+  }
+  
+  .about-img {
+    transition: transform 0.3s ease;
+  }
+  
+  .about-img:hover {
+    transform: scale(1.05);
+  }
+  

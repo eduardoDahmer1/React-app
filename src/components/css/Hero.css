@@ -1,0 +1,27 @@
+.hero-section {
+  min-height: 90vh;
+  background: linear-gradient(to right, #1a1a1a, #333, #000);
+}
+
+.hero-img {
+  max-width: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.hero-img:hover {
+  transform: scale(1.05);
+}
+
+.corzinha {
+  color: #ffd700; /* douradinho fraquinho */
+}
+
+.highlight span {
+  font-weight: 600;
+  color: #ddd;
+}
+
+.highlight:hover span {
+  color: #ffd700;
+}
